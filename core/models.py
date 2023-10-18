@@ -1,10 +1,26 @@
 from django.conf import settings
 from django.db import models
 
+CATEGORY_CHOICES = (
+    ('W', 'Wrench'),
+    ('B', 'Bolts'),
+    ('BR', 'Brakes')
+)
+
+LABEL_CHOICES = (
+    ('P', 'primary'),
+    ('S', 'secondary'),
+    ('D', 'danger')
+)
+
+
     # List and link items to other lists
 class Item(models.Model):
     title=models.CharField(max_length=100)
     price = models.FloatField()
+    category = models.CharField(choices=CATEGORY_CHOICES,  max_length=2)
+    label = models.CharField(choices=CATEGORY_CHOICES, max_length=2) 
+
     def _str_(self):
         return self.title
  
