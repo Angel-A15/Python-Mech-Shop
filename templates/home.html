@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
+    <title>Louies Shop</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{% static 'home/css/https://use.fontawesome.com/releases/v5.11.2/css/all.css' %} " />
     <!-- Google Fonts Roboto -->
@@ -18,15 +18,15 @@
     <!-- Interacting Buttons -->
 
     <!-- <test-delete></test-delete> -->
-    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
 </head>
 <body>
-    <!-- Navbar -->
+<!-- Navbar: Top of site -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
-  <!-- Container wrapper -->
+  <!-- Container wrapper for top menu -->
   <div class="container">    
-    <!-- Toggle button -->
+    <!-- Toggle button: Top menu-->
     <button
       class="navbar-toggler"
       type="button"
@@ -38,6 +38,7 @@
     >
       <i class="fas fa-bars"></i>
     </button>
+
     <!-- Search Bar -->
     <div class="input-group"
       style="width: 500px;">
@@ -45,11 +46,25 @@
       <button type="button" class="btn btn-outline-primary">search</button>
     </div>
 
-    <!-- Collapsible wrapper -->
+    <!-- Right elements: Shopping cart & Home Button -->
+    <div class="d-flex align-items-center">
+      <!-- Icon -->
+      <a class="nav-link me-3" href="#">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="badge rounded-pill badge-notification bg-danger">1</span>
+      </a>
+      <a href="" class="border rounded px-2 nav-link" target="_blank">
+        </i>Home
+      </a>
+      
+    </div>
+    <!-- Right elements -->
+
+    <!-- Collapsible wrapper: Top left menu list -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent1">      
       <!-- Navbar brand -->
 
-      <!-- Left links -->
+      <!-- Left links in menu -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item active">
           <a class="nav-link " href="">Warranties</a>
@@ -67,20 +82,6 @@
       <!-- Left links -->   
     </div>
     <!-- Collapsible wrapper -->
-    
-    <!-- Right elements -->
-    <div class="d-flex align-items-center">
-      <!-- Icon -->
-      <a class="nav-link me-3" href="#">
-        <i class="fas fa-shopping-cart"></i>
-        <span class="badge rounded-pill badge-notification bg-danger">1</span>
-      </a>
-      <a href="" class="border rounded px-2 nav-link" target="_blank">
-        </i>Home
-      </a>
-      
-    </div>
-    <!-- Right elements -->
     
   </div>
   <!-- Container wrapper -->
@@ -188,8 +189,10 @@
 
  <!--Main layout-->
 <main>
+
 <div class="container">
-  <!-- Center Page Navbar -->
+
+<!-- Navbar: Center of site -->
 <nav class="navbar navbar-expand-lg navbar-dark mt-3 mb-5 shadow p-2" style="background-color: #607D8B">
   <!-- Container wrapper -->
   <div class="container-fluid">
@@ -242,6 +245,7 @@
 <!-- Navbar -->
   
 <!-- Products -->
+
 <!-- Python based listt -->
 <section>
   <div class="text-center">
@@ -506,7 +510,7 @@
 </section>
   
 <!-- Pagination: Turn pages -->
-  <nav aria-label="Page navigation example" class="d-flex justify-content-center mt-3">
+<nav aria-label="Page navigation example" class="d-flex justify-content-center mt-3">
   <ul class="pagination">
     <li class="page-item disabled">
       <a class="page-link" href="#" aria-label="Previous">
@@ -525,10 +529,12 @@
     </li>
   </ul>
 </nav>  
-<!-- Pagination -->  
+<!-- Pagination -->
+
 </div>
+
 </main>
- <!--Main layout-->
+<!--Main layout-->
 
 <footer class="text-center text-white mt-4" style="background-color: #607D8B">
   
@@ -617,10 +623,12 @@
   </div>
   <!-- Copyright -->
 </footer>
+
     <!-- MDB -->
     <script type="text/javascript" src="{% static 'home/js/mdb.min.js' %}"></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="{% static 'home/js/script.js' %}"></script>
+    
 </body>
 </html>
 
