@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.db import models
+from django.shortcuts import reverse
 
 CATEGORY_CHOICES = (
     ('W', 'Wrench'),
@@ -14,15 +15,21 @@ LABEL_CHOICES = (
 )
 
 
-    # List and link items to other lists
+    # List and link items to other classes
 class Item(models.Model):
     title=models.CharField(max_length=100)
     price = models.FloatField()
     category = models.CharField(choices=CATEGORY_CHOICES,  max_length=2)
     label = models.CharField(choices=CATEGORY_CHOICES, max_length=2) 
+    slug= models.SlugField()
 
     def _str_(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse("core:product", kwargs={
+            'slug': self.slug
+        })
  
     # Pass items into order processing
 class OrderItem(models.Model):
@@ -31,7 +38,7 @@ class OrderItem(models.Model):
     def _str_(self):
         return self.title
     
-    # Store all items added to cart/ Identify if product was ordered
+    # Identify product was ordered
 class Order(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL,
                                     on_delete=models.CASCADE)
