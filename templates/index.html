@@ -1,4 +1,4 @@
-{% load static %}
+<!-- {% load static %} -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,13 +8,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Home</title>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="{% static 'home/css/https://use.fontawesome.com/releases/v5.11.2/css/all.css' %} " />
+    <link rel="stylesheet" href="/core/static/home/css/https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <!-- Google Fonts Roboto -->
-    <link rel="stylesheet" href="{% static 'home/css/https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap' %} " />
+    <link rel="stylesheet" href="/core/static/home/css/https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap " />
     <!-- MDB -->
-    <link rel="stylesheet" href="{% static 'home/css/mdb.min.css' %} " />
+    <link rel="stylesheet" href="/core/static/home/css/mdb.min.css" />
     <!-- Custom styles -->
-    <link rel="stylesheet" href="{% static 'home/css/style.css' %} " />
+    <link rel="stylesheet" href="/core/static/home/css/style.css" />
     <!-- Interacting Buttons -->
 
     <!-- <test-delete></test-delete> -->
@@ -114,7 +114,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="{% static 'home/img/carspcs.jpg'%}" class="d-block w-100" alt="Wild Landscape"/>
+      <img src="static/home/img/carspcs.jpg" class="d-block w-100" alt="Wild Landscape"/>
       <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)"></div>
       <div class="carousel-caption d-none d-sm-block mb-5">
         <h1 class="mb-4">
@@ -135,7 +135,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="{% static 'home/img/mchshp.jpeg'%}" class="d-block w-100" alt="Camera"/>
+      <img src="/core/static/home/img/mchshp.jpeg" class="d-block w-100" alt="Camera"/>
       <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)"></div>
       <div class="carousel-caption d-none d-md-block mb-5">
         <h1 class="mb-4">
@@ -156,7 +156,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="{% static 'home/img/old.jpg'%}" class="d-block w-100" alt="Exotic Fruits"/>
+      <img src="/core/static/home/img/old.jpg" class="d-block w-100" alt="Exotic Fruits"/>
       <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)"></div>
       <div class="carousel-caption d-none d-md-block mb-5">
         <h1 class="mb-4">
@@ -247,7 +247,7 @@
 <!-- Products -->
 
 <!-- Python based listt -->
-<section>
+<!-- <section>
   <div class="text-center">
     <div class="row">
       {% for item in object_list %}
@@ -283,7 +283,7 @@
       {% endfor  %}
   </div>
 
-</section>
+</section> -->
 
 <!-- Html list -->
 <section>
@@ -295,7 +295,7 @@
         <div class="card">
           <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
             data-mdb-ripple-color="light">
-            <img src="{% static 'home/img/hydrntwrnch.jpg'%}"
+            <img src="/core/static/home/img/hydrntwrnch.jpg"
               class="w-100" />
             <a href="#!">
               <div class="mask">
@@ -324,7 +324,7 @@
         <div class="card">
           <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
             data-mdb-ripple-color="light">
-            <img src="{% static 'home/img/racnblts.jpg'%}"
+            <img src="/core/static/home/img/racnblts.jpg"
               class="w-100" />
             <a href="#!">  
               <div class="mask">
@@ -353,7 +353,7 @@
         <div class="card">
           <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
             data-mdb-ripple-color="light">
-            <img src="{% static 'home/img/bndlwrnch.jpg'%}"
+            <img src="/core/static/home/img/bndlwrnch.jpg"
               class="w-100" />
             <a href="#!">              
               <div class="hover-overlay">
@@ -376,7 +376,7 @@
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card">
           <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-            <img src="{% static 'home/img/rcnbrkpds.jpg'%}"
+            <img src="/core/static/home/img/rcnbrkpds.jpg"
               class="w-100" />
             <a href="#!">
               <div class="mask">
@@ -410,7 +410,7 @@
         <div class="card">
           <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
             data-mdb-ripple-color="light">
-            <img src="{% static 'home/img/gldblts.jpg'%}"
+            <img src="/core/static/home/img/gldblts.jpg"
               class="w-100" />
             <a href="#!">              
               <div class="hover-overlay">
@@ -434,7 +434,7 @@
         <div class="card">
           <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
             data-mdb-ripple-color="light">
-            <img src="{% static 'home/img/racnblts.jpg'%}"
+            <img src="/core/static/home/img/racnblts.jpg"
               class="w-100" />
             <a href="#!">
               <div class="mask">
@@ -462,7 +462,7 @@
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card">
           <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-            <img src="{% static 'home/img/brkkit.jpg'%}"
+            <img src="/core/static/home/img/brkkit.jpg"
               class="w-100" />
             <a href="#!">              
               <div class="hover-overlay">
@@ -486,7 +486,7 @@
         <div class="card">
           <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
             data-mdb-ripple-color="light">
-            <img src="{% static 'home/img/redwrench.jpg'%}"
+            <img src="/core/static/home/img/redwrench.jpg"
               class="w-100" />
             <a href="#!">              
               <div class="hover-overlay">
@@ -617,9 +617,9 @@
 </footer>
 
     <!-- MDB -->
-    <script type="text/javascript" src="{% static 'home/js/mdb.min.js' %}"></script>
+    <script type="text/javascript" src="static/home/js/mdb.min.js"></script>
     <!-- Custom scripts -->
-    <script type="text/javascript" src="{% static 'home/js/script.js' %}"></script>
+    <script type="text/javascript" src="static/home/js/script.js"></script>
 
 </body>
 </html>
