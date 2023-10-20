@@ -35,7 +35,7 @@ MIDDLEWARE = [
     'allauth.account.middleware.AccountMiddleware'
 ]
 
-ROOT_URLCONF = 'demo.urls'
+ROOT_URLCONF = 'MechShop.urls'
 
 TEMPLATES = [
     {
